@@ -55,8 +55,8 @@ def play_game():
             print("You know her well! She's impressed.")
             score += 1
         else:
-            print("She seems disappointed.")
-            print("You start to see her tear up a little...")
+            print("Her eyes open WIDE!")
+            print("You start to see her tear up...")
             game_over = True
 
     # Final outcome
