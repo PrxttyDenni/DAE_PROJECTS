@@ -17,7 +17,7 @@ def play_game():
     # Game questions and options based on the flowchart
     questions = [
         {"question": "What would you order for a drink?", "options": ["Tea", "Coffee"], "correct": 0},
-        {"question": "Which tea does she prefer?", "options": ["Green Tea", "Black Tea"], "correct": 0},
+        {"question": "Which tea does she prefer?", "options": ["Green Tea", "Black Tea", "Idk"], "correct": 0},
         {"question": "Ok The real question is do you actually like her?", "options": ["Yes", "No"], "correct": 0},
     ]
     
@@ -30,7 +30,7 @@ def play_game():
     choice = ask_question(questions[0]["question"], questions[0]["options"])
     if choice == questions[0]["correct"]:
         print("Good choice! She likes tea.")
-        print("She smiles at you!")
+        print("She looks at you witha surpised expression!")
         score += 1
     else:
         print("Uh-oh, she wanted tea!")
@@ -41,7 +41,7 @@ def play_game():
         choice = ask_question(questions[1]["question"], questions[1]["options"])
         if choice == questions[1]["correct"]:
             print("Great! She loves Green Tea.")
-            print("She gives you a teethy smile")
+            print("She smiles at you ")
             score += 1
         else:
             print("She frowns; Black Tea wasn't her favorite.")
@@ -52,7 +52,7 @@ def play_game():
     if not game_over:
         choice = ask_question(questions[2]["question"], questions[2]["options"])
         if choice == questions[2]["correct"]:
-            print("You know her well! She's impressed.")
+            print("She looks at with heart eyes and confesses how much she loves you.")
             score += 1
         else:
             print("Her eyes open WIDE!")
